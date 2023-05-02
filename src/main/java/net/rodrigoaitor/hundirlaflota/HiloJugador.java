@@ -73,6 +73,10 @@ public class HiloJugador extends Thread{
         }
     }
 
+    /**
+     * Envía un objeto al cliente
+     * @param objeto
+     */
     public void enviarObjeto(Object objeto) {
         try {
             salida.writeObject(objeto);
